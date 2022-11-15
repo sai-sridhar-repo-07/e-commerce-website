@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans' sans-serif;
+}
+
+body{
+    margin: 0 20rem;
+    padding: 0 3rem;
+}
+
+
+/* Nav Bar  */
+
+.nav-bar{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    padding: 3rem 0 1rem  0;
+    position: relative;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+
+}
+
+.logo img{
+    position: absolute;
+    padding-left: 20px;
+    padding-top: -5px;
+    align-items: center;
+    scale: 1.8;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li a{
+    
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+
+}
+
+.nav-tabs{
+
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+
+}
+
+.list-items{
+    padding: 0 30px;
+}
+
+.list-items a{
+    font-size: 24px;
+}
+
+.profile{
+    display: flex;
+    overflow: hidden;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    top: 5rem;
+}
+
+.kart, .avatar{
+    padding: 0 15px;
+}
+
+.kart{
+    /* top: 10px; */
+    width: 80px;
+    height: 50px;
+}
+
+.avatar{
+    scale:0.8;
+    /* position: absolute;
+    top: -5px;
+    left: 30px; */
+    /* width: 60px;
+    height: 60px; */
+}
+
+
+
+/* Product Section  */
+
+.current-1, .current-2, .current-3, .current-4{
+    display: none;
+    cursor: pointer;
+}
+
+.active{
+    display: inline-block;
+}
+
+
+.interface{
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+
+.prod-images{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.large-images{
+    width:100%;
+    height: 650px;
+    align-items: center;
+    padding-left: 47px;
+    
+}
+
+.large-images img{
+    /* padding-left: 30px; */
+    width: 100;
+    height: 95%;
+    /* margin:0 80px; */
+    /* margin-top: 50px; */
+    border-radius: 30px;
+
+}
+
+.small-images{
+    display: flex;
+    gap: 7px;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+
+
+.small-images img{
+    
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    /* scale: 0.7; */
+}
+
+.active-btn{
+    
+    opacity: 0.4;
+    
+}
+
+.active-btn{
+    border: 3px solid hsl(26, 100%, 55%);
+    
+}
+
+
+.prod-text{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+.company{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-weight: 700;
+    color: hsl(26, 100%, 55%);
+}
+
+.heading{
+    font-size: 4rem;
+    padding: 20px 0;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+.prod-desc{
+    font-size: 1.5rem;
+    padding-top: 40px;
+    color: hsl(219, 9%, 45%);
+    letter-spacing: 2px;
+}
+
+.price-statement{
+    display: flex;
+    padding-top: 30px;
+    gap: 20px;
+    align-items: center;
+}
+
+.price{
+    
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+
+.discount{
+    font-size: 1.5rem;
+    padding: 0 10px;
+    background-color:hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    border-radius: 3px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+}
+
+
+.actual-price{
+    padding: 10px 0;
+    font-size: 1.5rem;
+    color: hsl(219, 9%, 45%);
+    text-decoration:line-through;
+}
+
+.items-num{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.items-count{
+    background-color: hsl(223, 64%, 98%);
+    padding: 0 20px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight:900;
+    color: hsl(26, 100%, 55%);
+    border-radius: 20px;
+}
+
+.count{
+    color: black;
+    padding: 0 70px;
+}
+
+.add-to{
+    display: flex;
+    background-color: hsl(26, 100%, 55%);
+    color:hsl(0, 0%, 100%);
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    /* text-transform: uppercase; */
+    font-weight: 400;
+    height: 75px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+.add-icon{
+    scale: 1.2;
+    padding-right: 20px;
+}

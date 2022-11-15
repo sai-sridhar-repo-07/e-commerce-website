@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 16px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="main-content">
+
+  <nav class="nav-bar">
+    <div class="logo"><img src="images/logo.svg" alt=""></div>
+    <div class="nav-elements">
+      <ul class="nav-tabs">
+        <li class="list-items"><a href="#">Collections</a></li>
+        <li class="list-items"><a href="#">Men</a></li>
+        <li class="list-items"><a href="#">Women</a></li>
+        <li class="list-items"><a href="#">About</a></li>
+        <li class="list-items"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="profile">
+      <img class="kart" src="images/icon-cart-1.svg" alt="">
+      <img class="avatar" src="images/image-avatar.png" alt="">
+
+    </div>
+  </nav>
+
+
+  <section class="interface">
+
+    <div class="prod-images">
+      <div class="large-images">
+        <img class="large current-1 active" id="img-1" src="images/image-product-1.jpg" alt="">
+        <img class="large current-2" id="img-2" src="images/image-product-2.jpg" alt="">
+        <img class="large current-3" id="img-3" src="images/image-product-3.jpg" alt="">
+        <img class="large current-4" id="img-4" src="images/image-product-4.jpg" alt="">
+    </div>
+    <div class="small-images">
+        <img class="small small-1 active-btn" data-id="img-1" src="images/image-product-1-thumbnail.jpg" alt="">
+        <img class="small small-2" data-id="img-2" src="images/image-product-2-thumbnail.jpg" alt="">
+        <img class="small small-3" data-id="img-3" src="images/image-product-3-thumbnail.jpg" alt="">
+        <img class="small small-4" data-id="img-4" src="images/image-product-4-thumbnail.jpg" alt="">
+    </div>
+    </div>
+
+
+    <div class="prod-text">
+
+      <h4 class="company">Sneaker Company</h4>
+      <h1 class="heading">Fall Limited Edition Sneakers</h1>
+      <p class="prod-desc">  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+
+      <div class="price-statement">
+        <h3 class="price">  $125.00 </h3>
+        <p class="discount"> 50%</p>
+      </div>
+      <p class="actual-price">$250.00</p>
+      
+      <div class="items-num">
+        <p class="items-count">- <span class="count">0</span> + </p>
+        <div>
+          <p class="add-to"><img class="add-icon" src="images/icon-cart-1-copy.svg" alt=""> Add to Kart</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sai Sridhar Tarra</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
